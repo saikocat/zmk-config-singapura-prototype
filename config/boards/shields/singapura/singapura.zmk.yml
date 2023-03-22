@@ -1,0 +1,13 @@
+file_format: "1"
+id: singapura
+name: Singapura
+type: shield
+url: https://github.com/saikocat/singapura-kb-pub/
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - singapura_left
+  - singapura_right
