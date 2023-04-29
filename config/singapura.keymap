@@ -160,7 +160,7 @@
             key-positions = <8 7 6>;
         };
 
-        new_combo {
+        combo_z {
             bindings = <&kp Z>;
             key-positions = <21 20>;
         };
