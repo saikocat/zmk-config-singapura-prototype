@@ -149,6 +149,16 @@
             bindings = <&kp LA(Z)>;
             key-positions = <20 21 32>;
         };
+
+        combo_enter_left {
+            bindings = <&kp ENTER>;
+            key-positions = <1 2 3>;
+        };
+
+        combo_enter_right {
+            bindings = <&kp ENTER>;
+            key-positions = <8 7 6>;
+        };
     };
 
     keymap {
@@ -177,11 +187,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans   &mo 3  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp UP_ARROW     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans   &mo 3  &trans    &trans        &trans     &trans  &trans
+                &trans  &trans  &trans  &trans    &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans     &trans  &trans
             >;
         };
 
