@@ -41,12 +41,12 @@
         };
 
         combo_ampersand {
-            bindings = <&kp 0>;
+            bindings = <&kp AMPERSAND>;
             key-positions = <17 16>;
         };
 
         combo_caret {
-            bindings = <&kp undefined>;
+            bindings = <&kp CARET>;
             key-positions = <18 16>;
         };
 
