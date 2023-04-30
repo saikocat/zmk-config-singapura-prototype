@@ -162,7 +162,7 @@
 
         combo_space {
             bindings = <&kp SPACE>;
-            key-positions = <24 23>;
+            key-positions = <24 12 13>;
         };
 
         combo_media_next {
@@ -172,7 +172,7 @@
 
         combo_media_previous {
             bindings = <&kp C_REWIND>;
-            key-positions = <>;
+            key-positions = <21 10>;
         };
 
         combo_volume_up {
