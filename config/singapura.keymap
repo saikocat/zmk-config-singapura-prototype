@@ -219,6 +219,11 @@
             bindings = <&kp SPACE>;
             key-positions = <14 13 12>;
         };
+
+        combo_media_play {
+            bindings = <&kp C_PLAY>;
+            key-positions = <21 22>;
+        };
     };
 
     keymap {
