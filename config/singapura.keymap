@@ -194,6 +194,16 @@
             bindings = <&kp C_PLAY>;
             key-positions = <21 22>;
         };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <26 27 28>;
+        };
+
+        combo_semicolon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <25 26 27>;
+        };
     };
 
     keymap {
