@@ -204,6 +204,21 @@
             bindings = <&kp SEMICOLON>;
             key-positions = <25 26 27>;
         };
+
+        combo_reopen_tab {
+            bindings = <&kp LS(LG(T))>;
+            key-positions = <20 31 4>;
+        };
+
+        combo_at_sign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <11 12 13>;
+        };
+
+        combo_space {
+            bindings = <&kp SPACE>;
+            key-positions = <14 13 12>;
+        };
     };
 
     keymap {
