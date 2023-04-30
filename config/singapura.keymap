@@ -160,9 +160,39 @@
             key-positions = <8 7 6>;
         };
 
-        combo_z {
-            bindings = <&kp Z>;
-            key-positions = <21 20>;
+        combo_space {
+            bindings = <&kp SPACE>;
+            key-positions = <24 23>;
+        };
+
+        combo_media_next {
+            bindings = <&kp C_FF>;
+            key-positions = <22 13>;
+        };
+
+        combo_media_previous {
+            bindings = <&kp C_REWIND>;
+            key-positions = <>;
+        };
+
+        combo_volume_up {
+            bindings = <&kp K_VOLUME_UP>;
+            key-positions = <22 23>;
+        };
+
+        combo_volume_down {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <20 21>;
+        };
+
+        combo_mute {
+            bindings = <&kp C_MUTE>;
+            key-positions = <22 21 20>;
+        };
+
+        combo_play {
+            bindings = <&kp C_PLAY>;
+            key-positions = <21 22>;
         };
     };
 
@@ -172,11 +202,11 @@
         layer_base {
             label = "BASE";
             bindings = <
-         &kp Q   &kp W     &kp E             &kp R      &kp T     &kp Y      &kp U                 &kp I        &kp O            &kp P
-         &kp A   &kp S     &kp D             &kp F      &kp G     &kp H      &kp J                 &kp K        &kp L            &mo 2
-&kp LEFT_SHIFT   &kp X     &kp C             &kp V      &kp B     &kp N      &kp M  &kp RS(RG(NUMBER_4))  &kp RC(TAB)  &kp RIGHT_SHIFT
-                           &mo 1  &kp LEFT_COMMAND  &kp SPACE     &mo 1  &kp SPACE              &kp RALT
-     &kp SPACE  &kp UP  &kp LEFT         &kp RIGHT   &kp DOWN  &kp DOWN  &kp RIGHT              &kp LEFT       &kp UP        &kp SPACE
+    &kp Q   &kp W     &kp E             &kp R           &kp T     &kp Y      &kp U                 &kp I        &kp O            &kp P
+    &kp A   &kp S     &kp D             &kp F           &kp G     &kp H      &kp J                 &kp K        &kp L            &mo 2
+    &kp Z   &kp X     &kp C             &kp V           &kp B     &kp N      &kp M  &kp RS(RG(NUMBER_4))  &kp RC(TAB)  &kp RIGHT_SHIFT
+                      &mo 1  &kp LEFT_COMMAND  &kp LEFT_SHIFT     &mo 1  &kp SPACE              &kp RALT
+&kp SPACE  &kp UP  &kp LEFT         &kp RIGHT        &kp DOWN  &kp DOWN  &kp RIGHT              &kp LEFT       &kp UP        &kp SPACE
             >;
         };
 
