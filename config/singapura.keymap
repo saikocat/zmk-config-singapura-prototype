@@ -234,6 +234,11 @@
             bindings = <&kp UP_ARROW>;
             key-positions = <18 29>;
         };
+
+        combo_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <9 8 17>;
+        };
     };
 
     keymap {
