@@ -257,11 +257,11 @@
 
         layer_1 {
             bindings = <
-  &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3         &kp N4      &kp NUMBER_5             &kp NUMBER_6     &kp NUMBER_7           &kp N8     &kp NUMBER_9             &kp N0
-&kp LEFT_ARROW      &kp UP_ARROW  &kp DOWN_ARROW      &kp RIGHT  &kp LEFT_COMMAND  &kp RS(RG(KP_NUMBER_4))  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RIGHT_COMMAND
-  &kp LA(LEFT)  &kp LEFT_CONTROL          &trans  &kp LA(RIGHT)     &kp LA(LG(V))              &kp RC(TAB)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp RIGHT_SHIFT
-                                          &trans         &trans            &trans                &kp ENTER       &kp PERIOD        &kp KP_N0
-        &trans            &trans          &trans         &trans            &trans                   &trans           &trans           &trans           &trans             &trans
+  &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3         &kp N4      &kp NUMBER_5    &kp NUMBER_6     &kp NUMBER_7           &kp N8     &kp NUMBER_9             &kp N0
+&kp LEFT_ARROW      &kp UP_ARROW  &kp DOWN_ARROW      &kp RIGHT  &kp LEFT_COMMAND  &kp RS(RG(N4))  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RIGHT_COMMAND
+  &kp LA(LEFT)  &kp LEFT_CONTROL          &trans  &kp LA(RIGHT)     &kp LA(LG(V))     &kp RC(TAB)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp RIGHT_SHIFT
+                                          &trans         &trans            &trans       &kp ENTER       &kp PERIOD        &kp KP_N0
+        &trans            &trans          &trans         &trans            &trans          &trans           &trans           &trans           &trans             &trans
             >;
         };
 
