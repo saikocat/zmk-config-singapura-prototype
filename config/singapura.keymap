@@ -221,7 +221,7 @@
         };
 
         combo_media_play {
-            bindings = <&kp C_PLAY>;
+            bindings = <&kp C_PLAY_PAUSE>;
             key-positions = <21 22>;
         };
 
