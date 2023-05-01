@@ -19,31 +19,7 @@
             release-after-ms = <SK_RELEASE_AFTER>;
             quick-release;
         };
-        ht: hold_tap {
-            label = "HOLD_TAP";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <TAPPING_TERM>;
-            quick-tap-ms = <QUICK_TAP_MS>;
-            global-quick-tap;
-            bindings =
-                <&kp>,
-                <&kp>;
-        };
-
-        // tap: skq shift | double-tap: caps_word
-
-        omss_caps_dance: omss_caps_dance {
-            label = "OMSS_CAPS_DANCE";
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TAPPING_TERM>;
-            bindings =
-                <&skq LSHFT>,
-                <&caps_word>;
-        };
-    };
+   };
 };
 
 / {
