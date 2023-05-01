@@ -33,7 +33,7 @@
                 <&kp>;
         };
     };
-
+}
 / {
     combos {
         compatible = "zmk,combos";
