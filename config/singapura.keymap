@@ -208,11 +208,6 @@
             key-positions = <22 21 20>;
         };
 
-        combo_play {
-            bindings = <&kp C_PLAY>;
-            key-positions = <21 22>;
-        };
-
         combo_colon {
             bindings = <&kp COLON>;
             key-positions = <26 27 28>;
