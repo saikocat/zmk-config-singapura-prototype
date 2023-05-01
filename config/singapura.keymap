@@ -20,7 +20,7 @@
             quick-release;
             ignore-modifiers;
         };
-   };
+    };
 };
 
 / {
@@ -265,21 +265,21 @@
         layer_base {
             label = "BASE";
             bindings = <
-    &kp Q   &kp W     &kp E              &kp R           &kp T     &kp Y      &kp U     &kp I     &kp O      &kp P
-    &kp A   &kp S     &kp D              &kp F           &kp G     &kp H      &kp J     &kp K     &kp L      &mo 2
-  &lt 1 Z   &kp X     &kp C              &kp V           &kp B     &kp N      &kp M  &kp LEFT  &kp DOWN  &kp RIGHT
-                      &mo 1  &skq LEFT_COMMAND  &kp LEFT_SHIFT     &mo 1  &kp SPACE  &kp RALT
-&kp SPACE  &kp UP  &kp LEFT          &kp RIGHT        &kp DOWN  &kp DOWN  &kp RIGHT  &kp LEFT    &kp UP  &kp SPACE
+    &kp Q   &kp W           &kp E              &kp R           &kp T     &kp Y      &kp U     &kp I     &kp O      &kp P
+    &kp A   &kp S           &kp D              &kp F           &kp G     &kp H      &kp J     &kp K     &kp L      &mo 2
+  &lt 1 Z   &kp X           &kp C              &kp V           &kp B     &kp N      &kp M  &kp LEFT  &kp DOWN  &kp RIGHT
+                   &lt 1 LEFT_ALT  &skq LEFT_COMMAND  &kp LEFT_SHIFT     &mo 1  &kp SPACE  &kp RALT
+&kp SPACE  &kp UP        &kp LEFT          &kp RIGHT        &kp DOWN  &kp DOWN  &kp RIGHT  &kp LEFT    &kp UP  &kp SPACE
             >;
         };
 
         layer_1 {
             bindings = <
-  &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3         &kp N4       &kp NUMBER_5    &kp NUMBER_6     &kp NUMBER_7           &kp N8     &kp NUMBER_9              &kp N0
-&kp LEFT_ARROW      &kp UP_ARROW  &kp DOWN_ARROW      &kp RIGHT  &skq LEFT_COMMAND  &kp RS(RG(N4))  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &skq RIGHT_COMMAND
-  &kp LA(LEFT)  &kp LEFT_CONTROL          &trans  &kp LA(RIGHT)      &kp LA(LG(V))     &kp RC(TAB)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3     &kp RIGHT_SHIFT
-                                          &trans         &trans             &trans       &kp ENTER       &kp PERIOD        &kp KP_N0
-        &trans            &trans          &trans         &trans             &trans          &trans           &trans           &trans           &trans              &trans
+  &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3         &kp N4       &kp NUMBER_5    &kp NUMBER_6     &kp NUMBER_7           &kp N8     &kp NUMBER_9              &kp N0
+&kp LEFT_ARROW      &kp UP_ARROW        &kp DOWN_ARROW      &kp RIGHT  &skq LEFT_COMMAND  &kp RS(RG(N4))  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &skq RIGHT_COMMAND
+  &kp LA(LEFT)  &kp LEFT_CONTROL  &kp LS(LG(NUMBER_4))  &kp LA(RIGHT)      &kp LA(LG(V))     &kp RC(TAB)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3     &kp RIGHT_SHIFT
+                                                &trans         &trans             &trans       &kp ENTER       &kp PERIOD        &kp KP_N0
+        &trans            &trans                &trans         &trans             &trans          &trans           &trans           &trans           &trans              &trans
             >;
         };
 
