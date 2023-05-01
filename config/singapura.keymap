@@ -19,11 +19,7 @@
             release-after-ms = <2000>;
             quick-release;
             ignore-modifiers;
-        };
-    };
-};
-behaviors {
-
+  
         gqt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP";
