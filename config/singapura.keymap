@@ -5,7 +5,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-
 &caps_word {
     continue-list = <UNDERSCORE MINUS BSPC RSHFT LSHFT>;
 };
@@ -28,20 +27,24 @@
             tapping-term-ms = <TAPPING_TERM>;
             quick-tap-ms = <QUICK_TAP_MS>;
             global-quick-tap;
-            bindings = <&kp>, <&kp>;
+            bindings =
+                <&kp>,
+                <&kp>;
         };
 
         // tap: skq shift | double-tap: caps_word
+
         omss_caps_dance: omss_caps_dance {
             label = "OMSS_CAPS_DANCE";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TAPPING_TERM>;
-            bindings = <&skq LSHFT>, <&caps_word>;
+            bindings =
+                <&skq LSHFT>,
+                <&caps_word>;
         };
     };
 };
-
 
 / {
     combos {
@@ -285,21 +288,21 @@
         layer_base {
             label = "BASE";
             bindings = <
-    &kp Q   &kp W     &kp E             &kp R           &kp T     &kp Y      &kp U     &kp I     &kp O      &kp P
-    &kp A   &kp S     &kp D             &kp F           &kp G     &kp H      &kp J     &kp K     &kp L      &mo 2
-    &kp Z   &kp X     &kp C             &kp V           &kp B     &kp N      &kp M  &kp LEFT  &kp DOWN  &kp RIGHT
-                      &mo 1  &kp LEFT_COMMAND  &kp LEFT_SHIFT     &mo 1  &kp SPACE  &kp RALT
-&kp SPACE  &kp UP  &kp LEFT         &kp RIGHT        &kp DOWN  &kp DOWN  &kp RIGHT  &kp LEFT    &kp UP  &kp SPACE
+    &kp Q   &kp W     &kp E              &kp R           &kp T     &kp Y      &kp U     &kp I     &kp O      &kp P
+    &kp A   &kp S     &kp D              &kp F           &kp G     &kp H      &kp J     &kp K     &kp L      &mo 2
+  &lt 1 Z   &kp X     &kp C              &kp V           &kp B     &kp N      &kp M  &kp LEFT  &kp DOWN  &kp RIGHT
+                      &mo 1  &skq LEFT_COMMAND  &kp LEFT_SHIFT     &mo 1  &kp SPACE  &kp RALT
+&kp SPACE  &kp UP  &kp LEFT          &kp RIGHT        &kp DOWN  &kp DOWN  &kp RIGHT  &kp LEFT    &kp UP  &kp SPACE
             >;
         };
 
         layer_1 {
             bindings = <
-  &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3         &kp N4      &kp NUMBER_5    &kp NUMBER_6     &kp NUMBER_7           &kp N8     &kp NUMBER_9             &kp N0
-&kp LEFT_ARROW      &kp UP_ARROW  &kp DOWN_ARROW      &kp RIGHT  &kp LEFT_COMMAND  &kp RS(RG(N4))  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RIGHT_COMMAND
-  &kp LA(LEFT)  &kp LEFT_CONTROL          &trans  &kp LA(RIGHT)     &kp LA(LG(V))     &kp RC(TAB)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp RIGHT_SHIFT
-                                          &trans         &trans            &trans       &kp ENTER       &kp PERIOD        &kp KP_N0
-        &trans            &trans          &trans         &trans            &trans          &trans           &trans           &trans           &trans             &trans
+  &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3         &kp N4       &kp NUMBER_5    &kp NUMBER_6     &kp NUMBER_7           &kp N8     &kp NUMBER_9              &kp N0
+&kp LEFT_ARROW      &kp UP_ARROW  &kp DOWN_ARROW      &kp RIGHT  &skq LEFT_COMMAND  &kp RS(RG(N4))  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &skq RIGHT_COMMAND
+  &kp LA(LEFT)  &kp LEFT_CONTROL          &trans  &kp LA(RIGHT)      &kp LA(LG(V))     &kp RC(TAB)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3     &kp RIGHT_SHIFT
+                                          &trans         &trans             &trans       &kp ENTER       &kp PERIOD        &kp KP_N0
+        &trans            &trans          &trans         &trans             &trans          &trans           &trans           &trans           &trans              &trans
             >;
         };
 
