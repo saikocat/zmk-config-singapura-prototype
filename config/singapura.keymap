@@ -34,7 +34,7 @@
         };
     };
 }
-/ {
+;{
     combos {
         compatible = "zmk,combos";
 
