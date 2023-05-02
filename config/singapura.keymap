@@ -9,6 +9,12 @@
     continue-list = <UNDERSCORE MINUS BSPC RSHFT LSHFT>;
 };
 
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <750>;
+    quick-tap-ms = <500>;
+};
+
 / {
     behaviors {
         skq: sticky_key_quick_release {
@@ -25,8 +31,8 @@
             label = "GLOBAL_QUICK_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <750>;
-            quick-tap-ms = <600>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
             global-quick-tap;
             bindings =
                 <&kp>,
