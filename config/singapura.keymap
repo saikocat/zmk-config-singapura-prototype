@@ -270,6 +270,63 @@
             bindings = <&kp SLASH>;
             key-positions = <9 8 17>;
         };
+
+        combo_right_window {
+            bindings = <&kp RC(RIGHT)>;
+            key-positions = <29 35>;
+        };
+
+        combo_left_window {
+            bindings = <&kp RC(LEFT)>;
+            key-positions = <35 27>;
+        };
+
+        combo_sweat {
+            bindings = <&macro_sweat>;
+            key-positions = <20 24>;
+        };
+
+        combo_thumbs_up {
+            bindings = <&macro_thumbs_up>;
+            key-positions = <20 14>;
+        };
+
+        combo_cheers_benroy {
+            bindings = <&marco_cheers_benroy>;
+            key-positions = <31 20 14>;
+        };
+
+        combo_meme {
+            bindings = <&macro_meme>;
+            key-positions = <29 25>;
+        };
+    };
+
+    macros {
+        macro_meme: macro_meme {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_MEME";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(I) &kp SPACE &kp F &kp E &kp E &kp L &kp SPACE &kp L &kp I &kp K &kp E &kp SPACE &kp W &kp E &kp SPACE &kp H &kp A &kp V &kp E &kp SPACE &kp G &kp O &kp N &kp E &kp SPACE &kp P &kp A &kp S &kp T &kp SPACE &kp S &kp O &kp C &kp I &kp A &kp L &kp SPACE &kp N &kp O &kp R &kp M &kp S &kp SPACE &kp H &kp A &kp H &kp H &kp A &kp A &kp H &kp A &kp H &kp H &kp H &kp ENTER>;
+        };
+        macro_thumbs_up: macro_thumbs_up {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_THUMBS_UP";
+            #binding-cells = <0>;
+            bindings = <&none &kp COLON &kp T &kp H &kp U &kp M &kp B &kp ENTER>;
+        };
+        macro_sweat: macro_sweat {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_SWEAT";
+            #binding-cells = <0>;
+            bindings = <&none &kp COLON &kp S &kp W &kp E &kp A &kp T &kp ENTER>;
+        };
+        marco_cheers_benroy: marco_cheers_benroy {
+            compatible = "zmk,behavior-macro";
+            label = "MARCO_CHEERS_BENROY";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(C) &kp H &kp E &kp E &kp R &kp S &kp EXCL &kp RET &kp LS(B) &kp E &kp N &kp R &kp O &kp Y>;
+        };
     };
 
     keymap {
