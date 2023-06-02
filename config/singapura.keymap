@@ -389,8 +389,8 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp UP_ARROW     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &mwh SCROLL_UP    &mwh SCROLL_LEFT  &mmv MOVE_UP     &mwh SCROLL_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &mwh SCROLL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &trans  &trans  &trans  &trans   &mo 3  &trans    &trans        &trans     &trans  &trans
                 &trans  &trans  &trans  &trans    &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans     &trans  &trans
