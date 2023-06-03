@@ -410,10 +410,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &mwh SCROLL_UP  &mwh SCROLL_LEFT    &mmv MOVE_UP  &mwh SCROLL_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &mwh SCROLL_DOWN    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &trans
+&mhw SCROLL_LEFT  &mmv MOVE_UP  &mhw SCROLL_RIGHT  &trans  &trans    &mwh SCROLL_UP  &mwh SCROLL_LEFT    &mmv MOVE_UP  &mwh SCROLL_RIGHT  &trans
+&mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans  &mwh SCROLL_DOWN    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &trans
 &trans  &trans  &trans  &trans   &mo 3            &trans            &trans          &trans             &trans  &trans
-                &trans  &trans  &trans             &to 0         &mkp LCLK       &mkp RCLK
+                &mkp LCLK  &mkp RCLK  &to 0             &to 0         &mkp LCLK       &mkp RCLK
 &trans  &trans  &trans  &trans  &trans            &trans            &trans          &trans             &trans  &trans
             >;
         };
