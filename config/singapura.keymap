@@ -246,7 +246,7 @@
         };
 
         combo_volume_up {
-            bindings = <&kp K_VOLUME_UP>;
+            bindings = <&kp C_VOLUME_UP>;
             key-positions = <22 23>;
         };
 
@@ -400,21 +400,21 @@
 
         layer_1 {
             bindings = <
-  &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3         &kp N4       &kp NUMBER_5  &kp NUMBER_6     &kp NUMBER_7           &kp N8     &kp NUMBER_9              &kp N0
-&kp LEFT_ARROW      &kp UP_ARROW  &kp DOWN_ARROW      &kp RIGHT  &skq LEFT_COMMAND        &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &skq RIGHT_COMMAND
-  &kp LA(LEFT)  &kp LEFT_CONTROL     &kp LC(TAB)  &kp LA(RIGHT)      &kp LA(LG(V))        &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3     &kp RIGHT_SHIFT
-                                          &trans         &trans             &trans     &kp ENTER       &kp PERIOD        &kp KP_N0
-        &trans            &trans          &trans         &trans             &trans        &trans           &trans           &trans           &trans              &trans
+  &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3         &kp N4       &kp NUMBER_5     &kp NUMBER_6     &kp NUMBER_7           &kp N8     &kp NUMBER_9              &kp N0
+&kp LEFT_ARROW      &kp UP_ARROW  &kp DOWN_ARROW      &kp RIGHT  &skq LEFT_COMMAND           &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &skq RIGHT_COMMAND
+  &kp LA(LEFT)  &kp LEFT_CONTROL     &kp LC(TAB)  &kp LA(RIGHT)      &kp LA(LG(V))  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3     &kp RIGHT_SHIFT
+                                          &trans         &trans             &trans        &kp ENTER       &kp PERIOD        &kp KP_N0
+        &trans            &trans          &trans         &trans             &trans           &trans           &trans           &trans           &trans              &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&mwh SCROLL_LEFT  &mmv MOVE_UP  &mwh SCROLL_RIGHT  &mwh SCROLL_UP  &trans    &mwh SCROLL_UP  &mwh SCROLL_LEFT    &mmv MOVE_UP  &mwh SCROLL_RIGHT  &trans
-&mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mwh SCROLL_DOWN  &trans  &mwh SCROLL_DOWN    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans  &trans   &mo 3            &trans            &trans          &trans             &trans  &trans
-                &mkp LCLK  &mkp RCLK  &to 0             &to 0         &mkp LCLK       &mkp RCLK
-&trans  &trans  &trans  &trans  &trans            &trans            &trans          &trans             &trans  &trans
+&mwh SCROLL_LEFT    &mmv MOVE_UP  &mwh SCROLL_RIGHT    &mwh SCROLL_UP  &trans    &mwh SCROLL_UP  &mwh SCROLL_LEFT    &mmv MOVE_UP  &mwh SCROLL_RIGHT  &trans
+  &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &mwh SCROLL_DOWN  &trans  &mwh SCROLL_DOWN    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &trans
+          &trans          &trans             &trans            &trans   &mo 3            &trans            &trans          &trans             &trans  &trans
+                                          &mkp LCLK         &mkp RCLK   &to 0             &to 0         &mkp LCLK       &mkp RCLK
+          &trans          &trans             &trans            &trans  &trans            &trans            &trans          &trans             &trans  &trans
             >;
         };
 
