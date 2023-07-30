@@ -38,19 +38,19 @@ if SHIELD_SINGAPURA_LEFT || SHIELD_SINGAPURA_RIGHT
     endif # ZMK_DISPLAY
 
 
-    if LVGL
+if LVGL
 
-        config LV_Z_VDB_SIZE
+        config LVGL_VDB_SIZE
                 default 64
 
-        config LV_Z_DPI
+        config LVGL_DPI
                 default 148
 
-        config LV_Z_BITS_PER_PIXEL
+        config LVGL_BITS_PER_PIXEL
                 default 1
 
-        choice LV_COLOR_DEPTH
-                default LV_COLOR_DEPTH_1
+        choice LVGL_COLOR_DEPTH
+                default LVGL_COLOR_DEPTH_1
         endchoice
 
     endif # LVGL
